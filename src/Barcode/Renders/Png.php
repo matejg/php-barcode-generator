@@ -67,7 +67,7 @@ class Png extends BarcodeRenderAbstract implements BarcodeRenderInterface
             echo $png;
         } else {
             imagepng($png);
-            imagedestroy($png);
+            // imagedestroy($png);
         }
         $image = ob_get_clean();
 
